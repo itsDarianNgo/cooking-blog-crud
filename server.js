@@ -4,7 +4,7 @@ const fileUpload = require('express-fileupload');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const flash = require('connect-flash');
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 const app = express();
 const port = process.env.PORT || 3000;
