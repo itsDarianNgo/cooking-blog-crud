@@ -9,10 +9,9 @@ const flash = require('connect-flash');
 const app = express();
 const port = process.env.PORT || 3000;
 
-mongoose.connect(process.env.MONGODB_URI)
-
-
 require('dotenv').config();
+
+mongoose.connect(process.env.MONGODB_URI)
 
 app.use(express.urlencoded( { extended: true } ));
 app.use(express.static('public'));
